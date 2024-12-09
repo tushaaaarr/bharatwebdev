@@ -1,18 +1,18 @@
 html,
 body {
   height: 100%;
-  /* overflow-x: hidden; */
+
   margin: 0;
   scroll-behavior: smooth;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
   background-color: #1d1d1d;
-} */
+}
 #hero {
   background: linear-gradient(0deg, rgba(249, 172, 64, 1) 0%, rgba(247, 142, 24, 1) 100%);
   width: 90%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,8 +87,21 @@ nav {
   left: 0;
   z-index: 11;
 }
+/* .fixed-height {
+  height: 100px;
+  overflow-y: auto;
+} */
 
 @media only screen and (max-width: 992px) {
+  #hero,
+  #hero1 {
+    display: none;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .circ {
     border-radius: 200%;
     max-width: 500px;
@@ -99,7 +112,11 @@ nav {
     object-fit: cover;
   }
   .content {
-    height: 100%;
+    height: 60dvh;
+    background: #f78e18;
+  }
+  #fc {
+    background: #f78e18;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -133,4 +150,43 @@ nav {
   background: repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
     repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
   background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+/* Hover effect for the person container */
+.person-container:hover .person {
+  transform: scale(1.05); /* Slight zoom-out effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add border effect on image during hover */
+.person-container:hover .person img {
+  border: 3px solid #f78e18; /* Border color */
+  transition: border 0.3s ease; /* Smooth border animation */
+}
+
+#icons .socials li a.hover {
+  color: #f78e18; /* Change to your desired hover color */
+  transform: scale(2.2); /* Slightly enlarge the icon */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#icons .socials li a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.recent-slider {
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider-wrapper img {
+  min-width: 100%;
+  height: 200px;
+  object-fit: cover;
 }

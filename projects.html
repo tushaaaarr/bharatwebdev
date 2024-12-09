@@ -30,8 +30,45 @@
     </script> -->
   </head>
   <body>
+        <!-- NAVBAR CODE START======== -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-none shadow-lg position-fixed w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand px-2 fw-bold" style="font-size: 30px !important" href="index.html">BWD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse lead" id="navbarNav">
+              <ul class="navbar-nav mainav mx-auto mb-lg-0">
+                <li class="nav-item px-3">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#serv">Services</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#wrk">Works</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#team-section">Team</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#foot">Contact</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="projects.html">Portfolio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <!-- NAVBAR CODE END======== -->
     <div class="pattern">
-      <div class="w-100 text-center text-light py-4" style="background-color: rgba(0, 0, 0, 0.5)">
+      <div class="w-100 text-center text-light py-5 mt-5" style="background-color: rgba(0, 0, 0, 0.5)">
         <h4 class="display-5 fw-bold">Our Projects</h4>
       </div>
     </div>
@@ -611,19 +648,54 @@
     </div>
 
     <!-- Footer/Connect section -->
-    <div class="pattern">
-      <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)">
-        <h1 class="display-3 pb-5 mt-0 fw-bold text-center" style="color: #f78e18"><em>Contact</em></h1>
-
-        <h4 class="fw-light text-light">If you like our work and already have a project in mind, please use the contacts below to request a quote or simply say “Hello!”.</h4>
-        <h3 class="text-light pt-5 pb-2">Email: <a href="mailto:zebcorp76@gmail.com" class="link-light"> zebcorp76@gmail.com</a></h3>
-        <h3 class="text-light pb-5">Linkedin: <a href="https://www.linkedin.com/company/bharat-web-dev/" class="link-light">Connect with Linkedin</a></h3>
-        <!-- <h3 class="text-light pb-5">Instagram: <a href="https://www.instagram.com/zeb_corp/" class="link-light">zeb_corp</a></h3> -->
-
-        <p class="text-secondary pt-5">©2019-2024.</p>
+    <footer>
+      <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(0, 0, 0, 1) 100%)">
+        <div class="container">
+          <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-6">
+              <h2 class="footer-heading mb-4" style="color: #f78e18;">About Us</h2>
+              <p class="text-light">At BharatWebDev, we are passionate about turning ideas into impactful digital solutions. With a strong foundation of expertise and a team driven by innovation, we aim to deliver excellence in every project we undertake.</p>
+            </div>
+      
+            <!-- Features Section -->
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18;">Features</h2>
+              <ul class="list-unstyled">
+                <li><a href="#About" class="link-light">About Us</a></li>
+                <li><a href="#serv" class="link-light">Services</a></li>
+                <li><a href="#team-section" class="link-light">Team</a></li>
+                <li><a href="#foot" class="link-light">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <!-- Follow Us Section -->
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18;">Follow Us</h2>
+              <a href="#" class="link-light pe-3"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-linkedin"></i></a>
+            </div>
+    
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18;">Location</h2>
+              <a href="#" class="link-light pe-3  text-decoration-none "><i class="fa-solid fa-location-dot pe-3"></i>#444,near to </a>
+            </div>
+    
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p class="text-light">
+                  &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved. Designed with love by You.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Footer/Connect section End -->
+    </footer>
+    
 
     <script>
       AOS.init();

@@ -7,19 +7,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/7a600ac64e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css" />
-    <link rel="icon" href="favic.png" type="image/gif" sizes="16x16" />
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16" />
     <script type="text/javascript" src="master.js" async></script>
 
-    <title>Portfolio Fiverr</title>
+    <title>BharatWebDev</title>
   </head>
   <body onload="fade()" id="fad">
     <div id="hero"></div>
     <div id="hero1"></div>
-    <a href="#fc" type="button" style="z-index: 3" class="btn btn-lg actionbtn px-4 position-fixed bottom-0 end-0 me-2"><i class="fa fa-angle-up"></i></a>
+    <a href="#fc" type="button" style="z-index: 3" class="btn btn-lg actionbtn px-3 position-fixed bottom-0 end-0 me-3 mr-0"><i class="fa fa-angle-up"></i></a>
 
     <!-- NAVBAR CODE START======== -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-none shadow-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none shadow-lg position-fixed w-100">
       <div class="container-fluid">
         <a class="navbar-brand px-2 fw-bold" style="font-size: 30px !important" href="index.html">BWD</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,28 +31,24 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#foot">Connect</a>
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link" href="#serv">Services</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#About">About</a>
+              <a class="nav-link" href="#team-section">Works</a>
             </li>
-
+            <!-- <li class="nav-item px-3">
+              <a class="nav-link" href="#team-section">Team</a>
+            </li> -->
             <li class="nav-item px-3">
-              <a class="nav-link" href="#wrk">Projects</a>
+              <a class="nav-link" href="#foot">Contact</a>
             </li>
-
             <li class="nav-item px-3">
               <a class="nav-link" href="projects.html">Portfolio</a>
             </li>
           </ul>
-          <!-- <ul class="navbar-nav">
-            <li class="nav-item px-3 float-end">
-              <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>
@@ -60,9 +56,9 @@
     <!-- NAVBAR CODE END======== -->
 
     <!-- HERO/LANDING CODE START======== -->
-    <div class="py-5 py-lg-0 px-lg-5" id="fc">
-      <div class="row align-items-center g-5 pb-5">
-        <div class="col-12 col-lg-11 text-light px-5 px-lg-1 d-flex justify-content-center align-items-center content">
+    <div class="py-1 py-lg-0 px-lg-5 pb-3 m-0" id="fc">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-11 text-light px-1 px-lg-1 d-flex justify-content-center align-items-center content">
           <div class="text-center">
             <h1 class="display-4 fw-bold lh-1 mb-3 text-center">
               <em><span class="text-dark">Build your next</span> Project.</em>
@@ -74,10 +70,10 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-none">
+        <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-none" id="icons">
           <!-- <img src="image2.png" class="bottom-0 d-block mx-lg-auto img-fluid float-lg-start circ" alt="heroimg" width="500" height="600" loading="lazy" /> -->
 
-          <ul class="list-unstyled ps-3 socials text-light h4 float-end align-middle d-lg-grid gap-4 d-flex">
+          <ul class="list-unstyled ps-3 socials text-light h2 float-end align-middle d-lg-grid gap-4 d-flex">
             <li>
               <a href="https://www.linkedin.com/company/bharat-web-dev/" class="link-light"><i class="fa fa-linkedin"></i></a>
             </li>
@@ -87,9 +83,9 @@
             <li>
               <a href="#" class="link-light"><i class="fab fa-facebook-square"></i></a>
             </li>
-            <!-- <li>
-              <a href="https://www.fiverr.com/tusharpatil934" class="link-light link border-0 fw-bold text-decoration-none">fi</a>
-            </li> -->
+            <li>
+              <a href="@" class="link-light link border-0 fw-bold text-decoration-none"><i class="fa-solid fa-location-dot"></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -98,213 +94,367 @@
     <!-- HERO/LANDING CODE END======== -->
 
     <!-- ABOUT SECTION START=== -->
-    <div id="About" class="px-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-      <div class="row flex-lg-row align-items-center g-5 pb-5">
+
+    <div id="About" class="px-4 pt-0" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%); overflow: hidden">
+      <div class="row flex-lg-row align-items-center g-2 pb-5">
         <div class="col-12 d-none col-sm-8 col-lg-6 d-lg-flex align-items-center">
-          <img src="frontend.jpg" class="bottom-0 d-block mx-lg-auto img-fluid float-start" alt="heroimg" style="height: 500px; width: 500px; object-fit: cover; border-radius: 100%" loading="lazy" />
+          <img
+            src="frontend.jpg"
+            class="bottom-0 d-block mx-lg-auto img-fluid float-start pt-3"
+            alt="heroimg"
+            style="height: 500px; width: 500px; object-fit: cover; border-radius: 20%"
+            loading="lazy"
+          />
         </div>
         <div class="col-lg-6 text-light">
-          <h1 class="display-5 fw-bold lh-1 mb-3" style="color: #f78e18"><em>About Us</em></h1>
+          <h1 class="display-5 fw-bold lh-3 mb-5" style="color: #f78e18"><em>About Us</em></h1>
+          <h5 class="display-6 fw-bold lh-2 mb-3" style="color: #ffffff"><em>Who We Are</em></h5>
           <p class="lead">
-            Our expertise spans full-stack development, backend and frontend development, UI/UX design, AI-driven solutions, data science, and machine learning algorithms. We also offer graphics design, video editing, custom CRM automation, legacy code debugging, and website redesign and rebuilding. Our goal is to provide seamless, scalable, and tailored solutions that enhance your digital presence and operational efficiency
+            At BharatWebDev, we are passionate about turning ideas into impactful digital solutions. With a strong foundation of expertise and a team driven by innovation, we aim to deliver excellence
+            in every project we undertake.
           </p>
-          <div class="d-grid gap-2 d-flex justify-content-md-start">
-            <a href="https://www.fiverr.com/tusharpatil934" target="_blank" type="button" class="btn btn-lg px-4 actionbtn"> See Gigs </a>
+          <div class="d-grid gap-1 d-flex justify-content-md-start">
+            <!-- <a href="https://www.fiverr.com/tusharpatil934" target="_blank" type="button" class="btn btn-lg px-4 actionbtn"> See Gigs </a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- New Content -->
+      <div class="row g-2 pb-1">
+        <!-- Card 1: What Makes Us Unique -->
+        <div class="col-lg-3 col-md-6 text-light">
+          <div class="card carddrop2 py-5 h-100 px-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%); transition: transform 0.3s">
+            <div class="card-body">
+              <h4 class="card-title" style="color: #f78e18">What Makes Us Unique</h4>
+              <p class="lead">
+                <strong>Proven Expertise:</strong> Over 100+ successful projects.<br />
+                <strong>Dynamic Team:</strong> Skilled professionals.<br />
+                <strong>Client-Centric Approach:</strong> Tailored solutions.<br />
+                <strong>Commitment to Quality:</strong> Precision and performance.<br />
+                <strong>Continuous Innovation:</strong> Cutting-edge technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Our Vision -->
+        <div class="col-lg-3 col-md-6 text-light">
+          <div class="card carddrop2 py-5 h-100 px-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%); transition: transform 0.3s">
+            <div class="card-body">
+              <h4 class="card-title" style="color: #f78e18">Our Vision</h4>
+              <p class="lead">To empower businesses with seamless, scalable, and innovative digital solutions that drive success and growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Our Journey in Numbers -->
+        <div class="col-lg-3 col-md-6 text-light">
+          <div class="card carddrop2 py-5 h-100 px-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%); transition: transform 0.3s">
+            <div class="card-body">
+              <h4 class="card-title" style="color: #f78e18">Our Journey in Numbers</h4>
+              <p class="lead">
+                <strong>100+ Projects Delivered</strong><br />
+                <strong>50+ Clients Across the Globe</strong><br />
+                <strong>5+ Years of Combined Team Experience</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Why Choose Us -->
+        <div class="col-lg-3 col-md-6 text-light">
+          <div class="card carddrop2 py-5 h-100 px-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%); transition: transform 0.3s">
+            <div class="card-body">
+              <h4 class="card-title" style="color: #f78e18">Why Choose Us?</h4>
+              <p class="lead">
+                We listen to your needs and craft solutions that fit perfectly.<br />
+                We value collaboration, creativity, and transparency.<br />
+                We deliver results that make a real difference.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- ABOUT SECTION END=== -->
 
     <!-- SERVICES SECTION START==== -->
-    <div id="serv" class="p-lg-5 p-1" style="background: linear-gradient(0deg, rgba(249, 172, 64, 1) 0%, rgba(247, 142, 24, 1) 100%)">
-      <p class="lead pt-5 pb-0 mb-0 fw-bold" style="color: rgba(19, 25, 39, 1)">What we offer?</p>
-      <h1 class="pb-5 mt-0 fw-bold text-light"><em>Our Services</em></h1>
+    <!-- new -->
+    <div id="serv" class="p-lg-5 p-0">
+      <p class="lead pt-1 pb-0 mb-0 fw-bold" style="color: rgba(19, 25, 39, 1)">What we offer?</p>
+      <h1 class="pb-5 mt-1 fw-bold" style="color: #f78e18"><em>Our Services</em></h1>
 
-      <div class="row g-5 pb-5">
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-cubes"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Full Stack Development</h4>
-              <p class="card-text lead">Our Full-Stack Development services deliver high-performance web applications with seamless front-end and back-end integration. We provide robust, scalable solutions tailored to your business needs</p>
-            </div>
-          </div>
-        </div>
-        
-          <div class="col-lg-4 text-light">
-            <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-              <h1 class="text-center" style="color: #f78e18"><i class="fa fa-desktop"></i></h1>
-              <div class="card-body pt-4">
-                <h4 class="card-title">Frontend Development</h4>
-                <p class="card-text lead">We create visually appealing, responsive, and user-friendly interfaces with a focus on performance and accessibility. Our frontend development services include custom UI design and seamless integration with backend APIs.</p>
-              </div>
-            </div>
-          </div>
-
-        <div class="col-lg-4 text-light">
-            <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-              <h1 class="text-center" style="color: #f78e18"><i class="fa fa-ils"></i></h1>
-              <div class="card-body pt-4">
-                <h4 class="card-title">Backend Development</h4>
-                <p class="card-text lead">Our backend development services handle server-side logic, database management, and API integrations for reliable, secure, and efficient applications. We provide advanced backend solutions to ensure a strong foundation for your systems.</p>
-              </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-ruler-combined"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">UI/UX & Graphic Design</h4>
-              <p class="card-text lead">Our UI/UX development services enhance user satisfaction by improving the usability, accessibility, and overall experience of your digital products. We design intuitive interfaces that engage and retain users.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-bezier-curve"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">AI-Driven Solutions</h4>
-              <p class="card-text lead">
-                Harness the power of artificial intelligence with our AI-driven solutions. From chatbots to predictive analytics, we integrate AI technologies to enhance your business operations and decision-making processes.
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1">
+        <!-- Card 1 -->
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-cubes"></i></h1>
+              <h4 class="card-title fw-bold">Full Stack Development</h4>
+              <p class="card-text lead text-bolder" style="color: rgba(19, 25, 39, 1)">
+                Our Full-Stack Development services deliver high-performance web applications with seamless front-end and back-end integration. We provide robust, scalable solutions tailored to your
+                business needs.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-database"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Data Science / Machine Learning</h4>
+        <!-- Card 2 -->
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-desktop"></i></h1>
+              <h4 class="card-title fw-bold">Frontend Development</h4>
               <p class="card-text lead">
-                Leverage our data science and machine learning expertise to uncover insights and drive smart decisions. We tailor advanced algorithms and AI solutions to enhance your business processes.            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-object-group"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Graphics Design</h4>
-              <p class="card-text lead">
-                Our graphics design services cover everything from logos to marketing materials. We create visually stunning graphics that align with your brand identity and captivate your audience.              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-american-sign-language-interpreting"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Website Redesign and Rebuilding</h4>
-              <p class="card-text lead">
-                Give your website a fresh, modern look with our redesign and rebuilding services. We transform outdated websites into dynamic, responsive, and user-friendly platforms that drive results.
+                We create visually appealing, responsive, and user-friendly interfaces with a focus on performance and accessibility. Our frontend development services include custom UI design and
+                seamless integration with backend APIs.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fas fa-code"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Web Development</h4>
+        <!-- Example for Additional Cards -->
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-code"></i></h1>
+              <h4 class="card-title fw-bold">Backend Development</h4>
+              <p class="card-text lead">We specialize in building secure and scalable backend systems that power your applications, ensuring smooth operations and robust data management.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fas fa-ruler-combined"></i></h1>
+              <h4 class="card-title fw-bold">UI/UX & Graphic Design</h4>
+              <p class="card-text lead">
+                Our UI/UX development services enhance user satisfaction by improving the usability, accessibility, and overall experience of your digital products. We design intuitive interfaces that
+                engage and retain users.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fas fa-bezier-curve"></i></h1>
+              <h4 class="card-title fw-bold">AI-Driven Solutions</h4>
+              <p class="card-text lead">
+                Harness the power of artificial intelligence with our AI-driven solutions. From chatbots to predictive analytics, we integrate AI technologies to enhance your business operations and
+                decision-making processes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fas fa-code"></i></h1>
+              <h4 class="card-title fw-bold">Web Development</h4>
               <p class="card-text lead">
                 Building fully functional websites from front to backend, featuring dynamic development with React.js, Python frameworks, PHP frameworks, and AWS integration.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-newspaper-o"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Deployment Services</h4>
-              <p class="card-text lead">Our deployment services ensure that your applications are smoothly transitioned from development to production. We handle the entire deployment process, ensuring minimal downtime and optimal performance.</p>
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-database"></i></h1>
+              <h4 class="card-title fw-bold">Data Science / Machine Learning</h4>
+              <p class="card-text lead">
+                Leverage our data science and machine learning expertise to uncover insights and drive smart decisions. We tailor advanced algorithms and AI solutions to enhance your business
+                processes.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-video-camera"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Video Editing</h4>
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-american-sign-language-interpreting"></i></h1>
+              <h4 class="card-title fw-bold">Website Redesign and Rebuilding</h4>
               <p class="card-text lead">
-                We offer professional video editing services to help you create compelling and engaging video content. Whether it's for marketing, training, or social media, we've got you covered.              </p>
+                Give your website a fresh, modern look with our redesign and rebuilding services. We transform outdated websites into dynamic, responsive, and user-friendly platforms that drive
+                results.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
-          <div class="card py-5 px-2 h-100" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <h1 class="text-center" style="color: #f78e18"><i class="fa fa-pie-chart"></i></h1>
-            <div class="card-body pt-4">
-              <h4 class="card-title">Custom CRM Automation</h4>
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-newspaper-o"></i></h1>
+              <h4 class="card-title fw-bold">Deployment Services</h4>
               <p class="card-text lead">
-                Optimize customer management with our custom CRM automation services. We design tailored workflows to streamline processes and enhance customer engagement for efficient interaction and data management.            </div>
+                Our deployment services ensure that your applications are smoothly transitioned from development to production. We handle the entire deployment process, ensuring minimal downtime and
+                optimal performance.
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-video-camera"></i></h1>
+              <h4 class="card-title fw-bold">Video Editing</h4>
+              <p class="card-text lead">
+                We offer professional video editing services to help you create compelling and engaging video content. Whether it's for marketing, training, or social media, we've got you covered.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <h1 style="color: #f78e18"><i class="fa fa-pie-chart"></i></h1>
+              <h4 class="card-title fw-bold">Custom CRM Automation</h4>
+              <p class="card-text lead">
+                Optimize customer management with our custom CRM automation services. We design tailored workflows to streamline processes and enhance customer engagement for efficient interaction and
+                data management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="service-dots" class="text-center mt-4">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
       </div>
     </div>
+    <!-- new end -->
     <!-- SERVICES SECTION END=== -->
-
-    <!-- WORK SECTION=== START-->
-    <div id="wrk" class="p-lg-5 p-2" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-      <p class="lead pt-5 pb-0 mb-0 fw-bold " style="color: #f78e18">Full Stack, Graphics design and other</p>
-      <h1 class="pb-5 mt-0 fw-bold text-light "><em>Recent Works</em></h1>
-
-      <div class="row g-5 pb-5">        
-        <div class="col-lg-4 text-light">
-        <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-          <img src="evalo.ai.png" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-          <div class="card-body pt-4">
-            <h4 class="card-title">Evalo.ai  ( <a href="https://evalo.ai/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-            <p class="card-text lead">
-              Evalo.ai is an AI-driven platform that automates resume screening, enhancing accuracy and saving time. It matches candidates to job descriptions instantly, streamlining the recruitment process.            </p>
-            </div>
+    <section>
+      <!-- Recent Work Section -->
+      <div class="site-section border-bottom pb-0" id="team-section" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
+        <div id="" class="p-lg-3 p-0 ms-5">
+          <p class="lead pt-5 pb-0 mb-0 fw-bold" style="color: #f78e18">Full Stack, Graphics Design, and Other</p>
+          <h1 class="pb-1 mt-1 fw-bold" style="color: #ffffff"><em>Recent Work</em></h1>
         </div>
-      </div>        
-        
-        <div class="col-lg-4 text-light">
-        <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-          <img src="bp.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-          <div class="card-body pt-4">
-            <h4 class="card-title">AR Power( <a href="https://www.arpowernow.com/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-            <p class="card-text lead">
-              AR Power is a platform that helps power electronics engineers select and optimize components with precision. It simplifies analysis and offers advanced tools and an evolving component database for informed, data-driven decisions.            </p>
+
+        <!-- Recent Work Section -->
+        <div class="row g-1 m-1 p-2 mt-0 align-items-center" id="Recent">
+          <!-- Recent Work 1 -->
+          <div class="col-12 col-lg-4 mb-1 p-lg-4 m-0 h-100">
+            <div class="person text-center bg-white p-4 rounded h-100" 
+                  style="width: 100%; margin: 0 auto; height: 550px; border-radius: 20%; overflow: hidden">
+                <!-- Image Slider -->
+                <div class="recent-slider" 
+                    style="height: 60%; width: 100%; position: relative; overflow: hidden; margin-bottom: 15px; display: flex; justify-content: center; align-items: center">
+                  <div class="slider-wrapper" 
+                      style="height: 100%; width: 100%; display: flex; transition: transform 0.5s ease">
+                    <img src="Ar.png" alt="Project Image 1" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                    <img src="Ar2.png" alt="Project Image 2" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+          
+              <!-- Logo -->
+              <div class="logo-container mb-2" style="display: flex; justify-content: center; align-items: center">
+                <img src="Arlogo.png" alt="Company Logo" style="height: 40px; width: auto; margin-right: 8px ;margin: 10px;" />
+              </div>
+          
+              <!-- Title -->
+              <h2 class="card-title">AR Power<a href="https://www.arpowernow.com/" class="text-info">(Visit)</a></h2>
+          
+              <!-- Paragraph -->
+              <p class="card-text py-3" style="justify-content: start; line-height: 1.5">
+                AR Power is a platform that helps power electronics engineers select and optimize components with precision. It simplifies analysis and offers advanced tools and an evolving component
+                database for informed, data-driven decisions.              </p>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 mb-1 p-lg-4 m-0 h-100">
+            <div class="person text-center bg-white p-4 rounded h-100" 
+                  style="width: 100%; margin: 0 auto; height: 550px; border-radius: 20%; overflow: hidden">
+                <!-- Image Slider -->
+                <div class="recent-slider" 
+                    style="height: 60%; width: 100%; position: relative; overflow: hidden; margin-bottom: 15px; display: flex; justify-content: center; align-items: center">
+                  <div class="slider-wrapper" 
+                      style="height: 100%; width: 100%; display: flex; transition: transform 0.5s ease">
+                    <img src="tp1.png" alt="Project Image 1" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                    <img src="tp2.png" alt="Project Image 2" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+              <!-- Logo -->
+              <div class="logo-container mb-2" style="display: flex; justify-content: center; align-items: center">
+                <img src="tplogo.png" alt="Company Logo" style="height: 60px; width:60px; margin-right: 8px" />
+              </div>
+              <!-- Title -->
+              <h2 class="card-title">Tutto Passa <a href="https://tuttopassa.com/" class="text-info">(Visit)</a></h2>
+              <!-- Paragraph -->
+              <p class="card-text py-3" style="justify-content: start; line-height: 1.5">
+                Tutto Passa and Makua Retreats unite to inspire self-discovery, spiritual growth, and transformative experiences. Together, we’re building a digital platform to reflect their shared mission of personal enlightenment and holistic well-being.              </p>
+              </p>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-4 mb-1 p-lg-4 m-0 h-100">
+            <div class="person text-center bg-white p-2 rounded h-100" 
+                  style="width: 100%; margin: 0 auto; height: 550px; border-radius: 20%; overflow: hidden">
+                <!-- Image Slider -->
+                <div class="recent-slider" 
+                    style="height: 60%; width: 100%; position: relative; overflow: hidden; margin-bottom: 15px; display: flex; justify-content: center; align-items: center">
+                  <div class="slider-wrapper" 
+                      style="height: 100%; width: 100%; display: flex; transition: transform 0.5s ease">
+                    <img src="rrd1.jpeg" alt="Project Image 1" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                    <img src="rrd2.jpeg" alt="Project Image 2" 
+                        style="width: 50%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+          
+              <!-- Logo -->
+              <div class="logo-container mb-2" style="display: flex; justify-content: center; align-items: center">
+                <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="p-0 m-0" ><b>RRG</b></h3>
+              </div>
+          
+              <!-- Title -->
+              <h2 class="card-title">Roebling Redevelopment Group</h2>
+          
+              <!-- Paragraph -->
+              <p class="card-text py-3" style="justify-content: start; line-height: 1.5">
+                We are collaborating with Roebling Redevelopment Group LLP to transform construction management with automation. Features include web scraping, transaction automation, a unified system for workflows and payments, Zillow and Dropbox integration, and a streamlined UI/UX dashboard.              </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="lps3.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">LPC INVEST ( <a href="https://ads.lpcinvest.com/lpc-invest-trafford-bar-apartments" target="_blank" class="text-info link fs-5">Visit </a> )</h4>
-              <p class="card-text lead">
-                A comprehensive property listing website with features like real-time updates, advanced search, dynamic blogs, and detailed property pages. It includes user profiles, ad tracking, CRM integration, and Google Maps for location services.              </p>
-            </div>
-          </div>
-        </div>
+    <!-- WORK SECTION=== START-->
+    <div id="wrk" class="p-lg-5 p-2 pt-0 mt-none" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
+      <div class="row g-5 pb-5">
+        <p class="lead pt-5 pb-0 mb-0 fw-bold" style="color: #f78e18">Completed Full Stack, Graphics design and other</p>
+        <h1 class="pb-5 mt-0 fw-bold text-light"><em> Works</em></h1>
 
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="bp.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
               <h4 class="card-title">BlogPro ( <a href="https://blogpro-sooty.vercel.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
               <p class="card-text lead">
-                A platform for HPU-affiliated colleges to collect files, create blogs, and share content with ease. It streamlines content management and enhances collaboration among users. The system is designed for efficient information sharing within the college community.              </p>
+                A platform for HPU-affiliated colleges to collect files, create blogs, and share content with ease. It streamlines content management and enhances collaboration among users. The system
+                is designed for efficient information sharing within the college community.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="mm.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
@@ -314,30 +464,32 @@
           </div>
         </div>
 
-
-      
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="critiq.png" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
               <h4 class="card-title">CRITIQ ( <a href="https://critiq.se/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">A music-focused web app that serves as a social platform for music critics and enthusiasts. It allows users to share opinions, reviews, and discover new music in a vibrant community.</p>
+              <p class="card-text lead">
+                A music-focused web app that serves as a social platform for music critics and enthusiasts. It allows users to share opinions, reviews, and discover new music in a vibrant community.
+              </p>
             </div>
           </div>
         </div>
 
-        
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="reactcommerce.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
               <h4 class="card-title">Fashionhub ( <a href="https://react-commerce-sage.vercel.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">An e-store created for a college grad, focused on selling merchandise. It offers a user-friendly platform for browsing and purchasing items. The store is designed to provide a seamless shopping experience..</p>
+              <p class="card-text lead">
+                An e-store created for a college grad, focused on selling merchandise. It offers a user-friendly platform for browsing and purchasing items. The store is designed to provide a seamless
+                shopping experience..
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="gg.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
@@ -347,7 +499,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="mv.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
@@ -359,61 +511,20 @@
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="cal1.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
               <h4 class="card-title">Calories Tracker</h4>
               <p class="card-text lead">
-                Developed a calorie tracker that offers users tools to manage intake and create diet plans. Users can log daily activities and food for better diet assessment and subscribe to premium plans for personalized dietary guidance.            </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="mym.webp" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">Mymovies</h4>
-              <p class="card-text lead">MyMovies is a cutting-edge platform that puts users in control of their movie and TV show watching experience.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="lm.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">LendMe( <a href="https://lend-me-p2p.netlify.app/" target="_blank" class="text-info link fs-5 border-0">Visit </a> )</h4>
-              <p class="card-text lead">
-                Developed a P2P Lending & Borrowing fintech solution, LendMe. Streamlining the borrowing process while optimising returns for users with dynamic agreement generation, in-app wallet &
-                payment gateway integration.
+                Developed a calorie tracker that offers users tools to manage intake and create diet plans. Users can log daily activities and food for better diet assessment and subscribe to premium
+                plans for personalized dietary guidance.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="s3.jpeg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">S3 Enhanced data visiualization</h4>
-              <p class="card-text lead">An interactive data visualization tool featuring advanced searching and sorting capabilities. It allows users to explore and analyze data intuitively for better insights.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
-          <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
-            <img src="uiux.jpg" class="card-img-top" style="object-fit: cover; max-height: 300px" />
-            <div class="card-body pt-4">
-              <h4 class="card-title">UI/UX work.</h4>
-              <p class="card-text lead">In contract with neuxm a social paltform collaborated to create UI/UX for the company.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 text-light">
+        <div class="col-lg-3 text-light">
           <div class="card carddrop py-5 h-100 px-2" style="width: 100%; background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(19, 25, 39, 1) 100%)">
             <img src="gds.png" class="card-img-top" style="object-fit: cover; max-height: 300px" />
             <div class="card-body pt-4">
@@ -429,19 +540,344 @@
     </div>
     <!-- WORK SECTION END END-->
 
-    <!-- Footer/Connect section -->
+    <!-- our team -->
+    <div class="site-section border-bottom d-none" id="team-section">
+      <div id="" class="p-lg-3 p-0 ms-5">
+        <p class="lead pt-1 pb-0 mb-0 fw-bold" style="color: rgba(19, 25, 39, 1)">Founders And Co-Founders</p>
+        <h1 class="pb-3 mt-1 fw-bold" style="color: #f78e18"><em>Our Team</em></h1>
+      </div>
 
-    <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(0, 0, 0, 1) 100%)">
-      <h1 class="display-3 pb-5 mt-0 fw-bold text-center" style="color: #f78e18"><em>Contact</em></h1>
+      <div class="row g-0 m-0 align-items-center justify-content-center" id="team-members">
+        <!-- Team Member 1 -->
+        <div class="col-md-6 col-lg-2 mb-3 m-0 p-0" style="transition: transform 0.3s ease">
+          <div class="person text-center bg-white pb-1 g-0">
+            <img src="image2.png" alt="Image" class="img-fluid rounded-circle mb-3" style="height: 10rem; width: 10rem; transition: border 0.3s ease" />
+            <h3>John Rooster</h3>
+            <p class="position text-muted lead">Co-Founder, President</p>
+          </div>
+        </div>
 
-      <h4 class="fw-light text-light">If you like my work and already have a project in mind, please use the contacts below to request a quote or simply say “Hello!”.</h4>
-      <h3 class="text-light pt-5 pb-2">Email: <a href="mailto:zebcorp76@gmail.com" class="link-light"> zebcorp76@gmail.com</a></h3>
-      <h3 class="text-light pb-5">Linkedin: <a href="https://www.linkedin.com/company/bharat-web-dev/" class="link-light">Connect with Linkedin</a></h3>
-      <!-- <h3 class="text-light pb-5">Instagram: <a href="https://www.instagram.com/zeb_corp/" class="link-light">zeb_corp</a></h3> -->
+        <!-- Team Member 2 -->
+        <div class="col-md-6 col-lg-2 mb-3 m-0 p-0" style="transition: transform 0.3s ease">
+          <div class="person text-center bg-white pb-1 g-0">
+            <img src="image2.png" alt="Image" class="img-fluid rounded-circle mb-3" style="height: 10rem; width: 10rem; transition: border 0.3s ease" />
+            <h3>Tom Sharp</h3>
+            <p class="position text-muted lead">Co-Founder, COO</p>
+          </div>
+        </div>
 
-      <p class="text-dark pt-5">©2019-2024.</p>
+        <!-- Team Member 3 -->
+        <div class="col-md-6 col-lg-2 mb-3 m-0 p-0" style="transition: transform 0.3s ease">
+          <div class="person text-center bg-white pb-1 g-0">
+            <img src="image2.png" alt="Image" class="img-fluid rounded-circle mb-3" style="height: 10rem; width: 10rem; transition: border 0.3s ease" />
+            <h3>Winston Hodson</h3>
+            <p class="position text-muted lead">Marketing</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="col-md-6 col-lg-2 mb-3 m-0 p-0" style="transition: transform 0.3s ease">
+          <div class="person text-center bg-white pb-1 g-0">
+            <img src="image2.png" alt="Image" class="img-fluid rounded-circle mb-3" style="height: 10rem; width: 10rem; transition: border 0.3s ease" />
+            <h3>Jane Doe</h3>
+            <p class="position text-muted lead">Product Manager</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <footer>
+      <div id="foot" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(0, 0, 0, 1) 100%)">
+        <div class="container">
+          <div class="row mb-0">
+            <div class="col-12 text-center">
+              <h1 class="pb-3 mt-1 fw-bold" style="color: #f78e18"><em>Contact Us</em></h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6 mb-3">
+              <!-- Contact Form -->
+              <form action="https://formsubmit.co/your-email@example.com" method="post" class="p-5 bg-dark bg-opacity-75 text-white rounded bg-transparent">
+                <h2 class="h4 mb-5" style="color: #f78e18">Contact Form</h2>
+
+                <!-- First Name and Last Name -->
+                <div class="row form-group">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-white" for="fname">First Name</label>
+                    <input type="text" id="fname" name="First Name" class="form-control bg-transparent text-white" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="text-white" for="lname">Last Name</label>
+                    <input type="text" id="lname" name="Last Name" class="form-control bg-transparent text-white" required />
+                  </div>
+                </div>
+                <br />
+                <!-- Email -->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="text-white" for="email">Email</label>
+                    <input type="email" id="email" name="Email" class="form-control bg-transparent text-white" required />
+                  </div>
+                </div>
+                <br />
+                <!-- Subject -->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="text-white" for="subject">Subject</label>
+                    <input type="text" id="subject" name="Subject" class="form-control bg-transparent text-white" required />
+                  </div>
+                </div>
+                <br />
+                <!-- Message -->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <label class="text-white" for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="7" class="form-control bg-transparent text-white" placeholder="Write your notes or questions here..." required> </textarea>
+                  </div>
+                </div>
+                <br />
+                <!-- Submit Button -->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white" style="background-color: #f78e18; border-color: #f78e18" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="foot2" class="p-5" style="background: radial-gradient(circle, rgba(19, 25, 37, 1) 0%, rgba(0, 0, 0, 1) 100%)">
+        <div class="container">
+          <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-6">
+              <h2 class="footer-heading mb-4" style="color: #f78e18">About Us</h2>
+              <p class="text-light">
+                At BharatWebDev, we are passionate about turning ideas into impactful digital solutions. With a strong foundation of expertise and a team driven by innovation, we aim to deliver
+                excellence in every project we undertake.
+              </p>
+            </div>
+
+            <!-- Features Section -->
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18">Features</h2>
+              <ul class="list-unstyled">
+                <li><a href="#About" class="link-light">About Us</a></li>
+                <li><a href="#serv" class="link-light">Services</a></li>
+                <li><a href="#team-section" class="link-light">Work</a></li>
+                <li><a href="#foot" class="link-light">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18">Follow Us</h2>
+              <a href="#" class="link-light pe-3"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="link-light pe-3"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+            <div class="col-md-2">
+              <h2 class="footer-heading mb-4" style="color: #f78e18">Location</h2>
+              <a href="#" class="link-light pe-3 text-decoration-none"><i class="fa-solid fa-location-dot pe-3"></i>#444,near to </a>
+            </div>
+
+            <div class="row pt-5 mt-5 text-center">
+              <div class="col-md-12">
+                <div class="border-top pt-5">
+                  <p class="text-light">Copy Right
+                    &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    Bharat Web Dev All Rights Reserved. Designed with love by You.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Footer/Connect section End -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      const scrollReveal = ScrollReveal({
+        reset: true,
+      });
+
+      const scrollRevealOptions = {
+        distance: "50px",
+        origin: "bottom",
+        duration: 1000,
+        easing: "ease-in-out",
+        interval: 200,
+      };
+
+      // Apply scroll reveal for the About section
+      scrollReveal.reveal("#About .col-lg-6 h1, #About .col-lg-6 h5, #About .col-lg-6 p", {
+        ...scrollRevealOptions,
+        origin: "right",
+        delay: 200,
+      });
+
+      scrollReveal.reveal("#About .col-sm-8 img", {
+        ...scrollRevealOptions,
+        origin: "left",
+        delay: 200,
+      });
+
+      scrollReveal.reveal(".carddrop2", {
+        ...scrollRevealOptions,
+        interval: 100,
+        origin: "bottom",
+      });
+
+      //  for our services section to slide
+      document.addEventListener("DOMContentLoaded", function () {
+        const serviceCards = document.querySelectorAll("#serv .col");
+        const serviceContainer = document.querySelector("#serv .row");
+        const dots = document.querySelectorAll("#service-dots .dot");
+        const batchSize = [6, 5]; // First batch: 6 cards, Second batch: 5 cards
+        const slideDuration = 800; // Slide duration in milliseconds
+        let currentBatch = 0; // Start with the first batch
+
+        if (serviceCards.length <= Math.max(...batchSize)) return; // If cards are fewer than the max batch size, no need to slide
+
+        // Function to slide the cards
+        function slideCards(startIndex, endIndex, direction) {
+          // Add sliding animation class
+          serviceContainer.style.transition = `transform ${slideDuration}ms ease-in-out`;
+
+          // Slide to the left
+          serviceContainer.style.transform = direction === "left" ? `translateX(-100%)` : `translateX(0)`;
+
+          // After animation ends, reset position and show correct cards
+          setTimeout(() => {
+            serviceContainer.style.transition = "none"; // Disable transition temporarily
+            serviceContainer.style.transform = "translateX(0)"; // Reset transform
+            serviceCards.forEach((card, index) => {
+              card.style.display = index >= startIndex && index < endIndex ? "block" : "none";
+            });
+          }, slideDuration);
+        }
+
+        // Function to update dot active state
+        function updateDots(activeIndex) {
+          dots.forEach((dot, index) => {
+            if (index === activeIndex) {
+              dot.classList.add("active");
+            } else {
+              dot.classList.remove("active");
+            }
+          });
+        }
+
+        // Initialize the first batch
+        serviceCards.forEach((card, index) => {
+          card.style.display = index < batchSize[0] ? "block" : "none";
+        });
+        updateDots(0);
+
+        // Add click event listeners for dots
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            if (index !== currentBatch) {
+              const direction = index > currentBatch ? "left" : "right";
+              currentBatch = index;
+              const startIndex = index === 0 ? 0 : batchSize[0];
+              const endIndex = index === 0 ? batchSize[0] : batchSize[0] + batchSize[1];
+              slideCards(startIndex, endIndex, direction);
+              updateDots(currentBatch);
+            }
+          });
+        });
+
+        // Auto-slide functionality
+        setInterval(() => {
+          const direction = currentBatch === 0 ? "left" : "right";
+          currentBatch = (currentBatch + 1) % batchSize.length;
+          const startIndex = currentBatch === 0 ? 0 : batchSize[0];
+          const endIndex = currentBatch === 0 ? batchSize[0] : batchSize[1] + batchSize[0];
+          slideCards(startIndex, endIndex, direction);
+          updateDots(currentBatch);
+        }, 3000); // Change batches every 5 seconds
+      });
+
+      // our team auto hover effet
+      function autoHoverEffect() {
+        const members = document.querySelectorAll("#team-members .col-lg-2");
+
+        let index = 0;
+
+        function animateMember() {
+          // Reset all members
+          members.forEach((member) => {
+            member.style.transform = "scale(1)";
+            member.querySelector("img").style.border = "none";
+          });
+
+          // Apply hover effect to the current member
+          const currentMember = members[index];
+          currentMember.style.transform = "scale(1.09)";
+          currentMember.querySelector("img").style.border = "5px solid #f78e18";
+
+          // Move to the next member
+          index = (index + 1) % members.length;
+        }
+
+        // Start the animation
+        setInterval(animateMember, 1000); // Change effect every 1 second
+      }
+
+      // Start the hover effect on page load
+      document.addEventListener("DOMContentLoaded", autoHoverEffect);
+
+      // Effect for header icons
+      document.addEventListener("DOMContentLoaded", function () {
+        const icons = document.querySelectorAll("#icons .socials li a");
+        let currentIndex = 0;
+
+        function applyHoverEffect() {
+          // Remove hover effect from all icons
+          icons.forEach((icon) => icon.classList.remove("hover"));
+
+          // Add hover effect to the current icon
+          icons[currentIndex].classList.add("hover");
+
+          // Move to the next icon
+          currentIndex = (currentIndex + 1) % icons.length;
+        }
+
+        // Apply hover effect every 1 second
+        setInterval(applyHoverEffect, 1000);
+      });
+
+      // for recent work image effect
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const sliders = document.querySelectorAll(".recent-slider");
+        if (window.innerWidth > 992) {
+          sliders.forEach((slider) => {
+            const sliderWrapper = slider.querySelector(".slider-wrapper");
+            const images = sliderWrapper.querySelectorAll("img");
+            let currentIndex = 0;
+
+            function slideLeft() {
+              currentIndex = (currentIndex + 1) % images.length;
+              sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            setInterval(slideLeft, 3000); // Slide every 3 seconds
+          });
+        }
+      });
+    </script>
   </body>
 </html>
